@@ -1,0 +1,6 @@
+@azure_skills_HostAddress = http://localhost:5062
+
+GET {{azure_skills_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
