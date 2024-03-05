@@ -1,0 +1,15 @@
+# CI/CD pipeline 
+
+trigger: # pipeline run starts when changes are pushed to the main branch of the repository 
+- main
+
+pool: 
+  name: default # the self-hosted Windows agent defined in Organisation's Setting
+
+steps:
+- task: AzureContainerApps@1 # Deploys a containerised app to Azure Container Apps 
+  inputs:
+    azureSubscription: 'Azure subscription 1(xxxxxxxxxxxxxxxxxxxxxxxxxxx)'
+    imageToDeploy: 'acrapl2003.azurecr.io/aspnetcorecontainer:latest'
+    containerAppName: 'aca-apl2003' 
+    resourceGroup: 'solaris-rg1'
