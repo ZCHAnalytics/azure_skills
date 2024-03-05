@@ -1,43 +1,46 @@
-# Downsizing from Azure Kubernetes Service (AKS) to Azure Container Apps (ACA) 
+#  Platform as a Service solution for containerised web apps with Azure
 
-## Scenario:
-Company wants to switch from Azure Kubernetes Service (AKS) to Azure Container Apps as they are not using the custom service mesh or autoscaling features of AKS.
+In this project I configure a secure Platform as a Service (PaaS) solution for cloud-native apps with Azure
 
-## Re-requisites:
-- Docker Desktop
-- Visual Studio Code with Docker and Azure App extentions
-- Azure CLI with `containerapp` extention
-- Windows PowerShell
+## 1. PaaS components in Azure Portal
+- A Resource Group to help manage and deploy related resources together 
+- Networking infrastructure: Azure Virtual Network (VNet), subnets, private endpoints
+- Service Bus (applications messaging service)
+- Azure Container Registry (ACR), a managed Docker Registry Service 
 
-## 1. Required Azure resources
-- resource group
-- Virtual Network and subnets
-- Service bus
-- Azure Container Registry
+## 2. Development of the web application in Visual Studio Code
+- Create a WebAPI app and publish to a GitHub repository
+- Containerise WebAPI app using a Docker image
+- Push the Docker image to Azure Container Registry for storing and managing
 
-## 2. App and deployment resources
-- WebAPI app and publish to a GitHub repository
-- Docker image pushed to Azure Container Registry
-- Azure DevOps starter pipeline
-- Deployment of a self-hosted Windows agent
+## 3. Protecting data with secure connection between Container Registry and Container Apps
+- Add a user-assigned managed identity to the resource group
+- Container registry must be able to use the managed identity to pull artifacts
+- Add AcrPull permission to the the managed identity, using the principle of least privilege
+- Add a private endpoint connection to the container registry
 
-## 3. Azure Container Registry for a secure connection with Azure Container Apps
--  Configure a user-assigned managed identity.
-- Configure your container registry with AcrPull permissions for the managed identity.
-- Configure your container registry with a private endpoint connection.
+## 4. Configure a runtime environment with a container app in Azure Container Apps
+- Add a container app that pulls specified image from container registry
+- Add authentication with user assigned identity
+- Configure a connection between the container app and Service Bus
+- Configure HTTP scale rules to allow autoscaling
 
-## 4. Container app in Azure Container Apps
-- Container app that uses an ACR image
-- Authenticate using the user assigned identity
-- Connection between the container app and Service Bus
-- HTTP scale rules
+## 5. Automate deployment in Azure DevOps 
+- Configure a PaaS environment for managing software development lifecycle 
+- Define CI/CD workflow with a starter pipeline and task `Azure App Service Deploy`
+- Add a self-hosted Windows agent to access resources with Azure cloud shell
+- Run the pipeline and check the outcome in Azure Portal
 
-## Continuous Integration with Azure Pipelines
-- Self-hosted agent pool
-- Pipeline1 with an Azure Container Apps deployment task
+## 6. Manage Revisions in Azure Container Apps
+- Switch to multiple revision management to facilitate versioning
+- Create a new revision for changes to the application
+- Add labels to revisions to enable easy identification
+- Split traffic between different revisions
 
-## Revisions in Azure Container Apps
-- Multiple revision management
-- Add new revision with a v2 suffix
-- Add labels
-- Change traffic percentage on the revisions
+# Tools and Technologies Utilised
+
+## Development Tools:
+Visual Studio Code, .NET Core SDK, Docker Desktop, GitHub
+
+## Azure Services:
+Azure Container Registry (ACR), Azure Container Apps, Azure DevOps, Azure CLI
