@@ -26,17 +26,17 @@ Company wants to switch from Azure Kubernetes Service (AKS) to Azure Container A
 - Configure your container registry with AcrPull permissions for the managed identity.
 - Configure your container registry with a private endpoint connection.
 
-# 4. Container app in Azure Container Apps
+## 4. Container app in Azure Container Apps
 - Container app that uses an ACR image
 - Authenticate using the user assigned identity
 - Connection between the container app and Service Bus
 - HTTP scale rules
 
-# Continuous Integration with Azure Pipelines
+## Continuous Integration with Azure Pipelines
 - Self-hosted agent pool
 - Pipeline1 with an Azure Container Apps deployment task
 
-# Revisions in Azure Container Apps
+## Revisions in Azure Container Apps
 - Multiple revision management
 - Add new revision with a v2 suffix
 - Add labels
