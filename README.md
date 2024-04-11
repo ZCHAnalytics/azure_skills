@@ -1,30 +1,20 @@
-
 <p align="left">
-   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic&logoColor=white" alt="license">
-	<img src="https://img.shields.io/github/last-commit/ZCHAnalytics/cloud-native-azure-paas?style=plastic&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/ZCHAnalytics/cloud-native-azure-paas?style=plastic&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/ZCHAnalytics/cloud-native-azure-paas?style=plastic&color=0080ff" alt="repo-language-count">
-  
-<p>
-<p align="left">
-		<em>Developed with the tools below: </em>
+    <img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=plastic&logo=terraform&logoColor=white" alt="Terraform">
+    <img src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=plastic&logo=microsoft-azure&logoColor=white" alt="Microsoft Azure">
+    <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=plastic&logo=azure-devops&logoColor=white" alt="AzureDevops">
+    <img src="https://img.shields.io/badge/.NET-512BD4?style=plastic&logo=dotnet&logoColor=white" alt="Dotnet">
+    <img src="https://img.shields.io/badge/Docker-2CA5E0?style=plastic&logo=docker&logoColor=white" alt="Docker">
+    <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=plastic&logo=visual%20studio%20code&logoColor=white" alt="Visual Studio Code">
+    <img src="https://img.shields.io/badge/powershell-5391FE?style=plastic&logo=powershell&logoColor=white" alt="PowerShell">
 </p>
-<p align="left">
-	<img src="https://img.shields.io/badge/terraform-%235835CC.svg?style=plastic&logo=terraform&logoColor=white" alt="Terraform">
-<img src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=plastic&logo=microsoft-azure&logoColor=white" alt="Microsoft Azure">
- <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=plastic&logo=azure-devops&logoColor=white" alt="AzureDevops">
-<img src="https://img.shields.io/badge/.NET-512BD4?style=plastic&logo=dotnet&logoColor=white" alt="Dotnet">
-<img src="https://img.shields.io/badge/Docker-2CA5E0?style=plastic&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=plastic&logo=visual%20studio%20code&logoColor=white" alt="Visual Studio Code">
-<img src="https://img.shields.io/badge/powershell-5391FE?style=plastic&logo=powershell&logoColor=white" alt="PowerShell">
+
+<h1 align="left">Microsoft Applied Skill</h1>
+<h3 align="left">Deploy cloud-native apps using Azure Container Apps</h3>
+
+<img src="https://github.com/ZCHAnalytics/cloud-native-azure-paas/assets/146954022/46adcb5e-d7b1-4c89-84e3-5a51f677fe5d" alt="certificate-image" width="300" align="right">
+For this Microsoft Applied Skill Credential, I configure a secure Platform as a Service (PaaS) solution for cloud-native apps with Azure. 
 
 
-</p>
-<hr>
-
-#  Platform as a Service solution for containerised web apps with Azure
-
-In this project I configure a secure Platform as a Service (PaaS) solution for cloud-native apps with Azure
 
 ## 1. PaaS components in Azure Portal <img src="https://img.shields.io/badge/microsoft%20azure-0089D6?style=plastic&logo=microsoft-azure&logoColor=white" alt="Microsoft Azure">
 - A Resource Group to help manage and deploy related resources together 
